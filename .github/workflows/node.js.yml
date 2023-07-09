@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [18.x]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -77,15 +77,4 @@ jobs:
           image: ${{ secrets.REACTUSERNAME }}/shopping-app-react:latest
           run: |
             echo "runing the docker image"
-  push_to_vercel:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: amondnet/vercel-action@v20
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.ORG_ID}} 
-          vercel-project-id: ${{ secrets.PROJECT_ID}}
-          vercel-args: "--prod"
-        
+  
