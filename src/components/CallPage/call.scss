@@ -1,0 +1,11 @@
+#videoCam {
+    display:flex;
+   position: static;
+    align-items: center;
+    margin-left: 25vh;
+     width: calc(100vh + 360px);
+     height: calc(100vh - 90px);
+     border: 1px black;
+     object-fit: cover;
+     opacity: 1;
+    }
