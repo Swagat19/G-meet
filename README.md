@@ -8,7 +8,7 @@ User Interface: The project replicates the user interface of Google Meet, includ
 * On callpage there will be a popup where you can see link id and copy it and close the pop up , and also retrive it when ever required
 * A chat box on right side of callpage
 * On clicking 'call icon' at bottom you come out of your meeting
-## Technologies Used :-
+## Technologies Used 
 This project is built using the following technologies: </br>
 * Scss
 * JavaScript (React)
